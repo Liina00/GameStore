@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="GameStore.API/GameStore.API.csproj" />
+  <Project Path="GameStore.Application/GameStore.Application.csproj" />
+  <Project Path="GameStore.Domain/GameStore.Domain.csproj" />
+  <Project Path="GameStore.Infrastructure/GameStore.Infrastructure.csproj" />
+</Solution>
