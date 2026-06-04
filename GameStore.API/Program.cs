@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using GameStore.Infrastructure.Data;
 using GameStore.Domain.Interfaces;
 using GameStore.Infrastructure.Repositories;
+using GameStore.Application.DTOs.Games;
 namespace GameStore.API
 {
     public class Program
@@ -20,11 +21,13 @@ namespace GameStore.API
             //Db context
             builder.Services.AddDbContext<AppDbContext>(options =>
                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             //Repositories
             builder.Services.AddScoped<IGameRepository, GameRepository>();
             builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+
             //mediatR
-            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));//nyare version mediatR, innan typeof, nu assembly
+            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<GameDto>());
 
             var app = builder.Build();
 
