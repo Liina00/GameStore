@@ -1,0 +1,10 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MediatR;
+using GameStore.Application.DTOs.Genres;
+
+namespace GameStore.Application.Queries.Genres;
+public record GetGenreByIdQuery(int Id) : IRequest<GenreDto>; // this is to get the genre by ID
