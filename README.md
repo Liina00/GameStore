@@ -1,5 +1,6 @@
-GAMESTORE API
-A backend application where you can manage *(Games)* & *(Genres of the Games)*, with Clean Architecture.
+# GAMESTORE API
+
+##### A backend application where you can manage *(Games)* & *(Genres of the Games)*, with Clean Architecture.
 
 ### *What the application has*
 - Add *(Genres)*
@@ -38,20 +39,24 @@ A backend application where you can manage *(Games)* & *(Genres of the Games)*, 
 4. Open Swagger  go to  → " https://localhost:7112/swagger/index.html "  ←
 
 # API Endpoints
-## Games
+
+###  Games
 | Method | Endpoint | Description |
+|--------|-----------|-------------|
 | GET | `/api/games` | Get all *(Games)* |
-| GET | `/api/games{id}` | Get a "single" Game by ID |
-| POST | `/api/games` | Add a new game (Title, description, price, genreId |
-| PUT | `/api/games/{id}` | Update a *Game*. |
+| GET | `/api/games/{id}` | Get a "single" Game by ID |
+| POST | `/api/games` | Add a new Game *(Title, Description, Price, GenreId)* |
+| PUT | `/api/games/{id}` | Update a *Game* |
 | DELETE | `/api/games/{id}` | Delete a *Game* |
-## Genres
+
+###  Genres
 | Method | Endpoint | Description |
-| GET | `/api/games` | Get all *(Genres)* |
-| GET | `/api/games{id}` | Get a "single" Genrgre by ID |
-| POST | `/api/games` | Add a new Genre |
-| PUT | `/api/games/{id}` | Update a *Genre*. |
-| DELETE | `/api/games/{id}` | Delete a *Genre* |
+|--------|-----------|-------------|
+| GET | `/api/genres` | Get all *(Genres)* |
+| GET | `/api/genres/{id}` | Get a "single" Genre by ID |
+| POST | `/api/genres` | Add a new Genre |
+| PUT | `/api/genres/{id}` | Update a *Genre* |
+| DELETE | `/api/genres/{id}` | Delete a *Genre* |
 
 ## Database
 - SQL Server LocalDB
