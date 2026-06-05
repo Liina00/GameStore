@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameStore.Application.DTOs.Genres
 {
-    public class GenreDto
+    public class GenreDto//Dto for Genre transfer deata between layers API and front/application
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;
+        public int Id { get; set; } //Unique Id for genre
+        public string Name { get; set; } = string.Empty;//name of genre
     }
 }
