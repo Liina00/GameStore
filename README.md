@@ -71,5 +71,5 @@
 - GameStore.Infrastructure - DbContext + Repositories
 
 ### *Reflection*
-- The setup and preperation of Clean Architexcture setup
+- The setup and preperation of Clean Architexcture went well
 - CRUD went well
